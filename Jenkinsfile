@@ -2,11 +2,20 @@ pipeline{
     agent any
     stages{
         stage('clean'){
-            echo 'clean....'
+            steps {
+                script {
+                    echo 'clean....'
+                }
+            }
         }
+
          stage('build'){
-            echo 'build....'
-        }
+             steps {
+                 script {
+                     echo 'build....'
+                 }
+             }
+         }
 
     }
 }
